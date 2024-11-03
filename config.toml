@@ -20,14 +20,6 @@ pagination.pagerSize = 10
   category = "categories"
   archive = "archives"
 
-[params.author]
-  name = "Koji Higasa"
-  bio = "Curiosity killed the cat"
-  job = "Working on an IT industry"
-  location = "Tokyo, Japan"
-  picture = "images/avatar.jpg"
-  twitter = "kojihigasa"
-
 [[menu.main]]
   weight = 1
   identifier = "home"
@@ -155,6 +147,11 @@ pagination.pagerSize = 10
 [params]
   author = "Koji Higasa"
   description = "Koji Higasa's Blog"
+  bio = "Curiosity killed the cat"
+  job = "Working on an IT industry"
+  location = "Tokyo, Japan"
+  picture = "images/avatar.jpg"
+  twitter = "kojihigasa"
   sidebarBehavior = 1
   thumbnailImage = true
   thumbnailImagePosition = "right"
