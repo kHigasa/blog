@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MongoDB on Koji Higasa&#39;s Blog</title>
-    <link>https://khigasa.github.io/blog/categories/mongodb/</link>
+    <link>http://localhost:1313/blog/categories/mongodb/</link>
     <description>Recent content in MongoDB on Koji Higasa&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Nov 2024 18:56:15 +0900</lastBuildDate>
-    <atom:link href="https://khigasa.github.io/blog/categories/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/categories/mongodb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MongoDB</title>
-      <link>https://khigasa.github.io/blog/mongodb/</link>
+      <link>http://localhost:1313/blog/mongodb/</link>
       <pubDate>Sun, 03 Nov 2024 18:56:15 +0900</pubDate>
-      <guid>https://khigasa.github.io/blog/mongodb/</guid>
+      <guid>http://localhost:1313/blog/mongodb/</guid>
       <description></description>
     </item>
   </channel>

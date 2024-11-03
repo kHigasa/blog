@@ -1,6 +1,7 @@
 ---
 title: "MongoDB"
 date: 2024-11-03T18:56:15+09:00
+draft: true
 categories:
 - MongoDB
 tags:
