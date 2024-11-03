@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Docs on Koji Higasa&#39;s Blog</title>
-        <link>http://localhost:1313/blog/tags/docs/</link>
+        <link>http://localhost:59372/blog/tags/docs/</link>
         <description>Recent content in Docs on Koji Higasa&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <managingEditor>kojihigasa@gmail.com (Koji Higasa)</managingEditor>
         <webMaster>kojihigasa@gmail.com (Koji Higasa)</webMaster>
-        <lastBuildDate>Sun, 17 Feb 2019 16:54:54 +0900</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/docs/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 17 Feb 2019 16:54:54 +0900</lastBuildDate><atom:link href="http://localhost:59372/blog/tags/docs/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Vir - Vi Rusted</title>
-        <link>http://localhost:1313/blog/vir-vi-rusted/</link>
+        <link>http://localhost:59372/blog/vir-vi-rusted/</link>
         <pubDate>Sun, 17 Feb 2019 16:54:54 +0900</pubDate>
         <author>kojihigasa@gmail.com (Koji Higasa)</author>
-        <guid>http://localhost:1313/blog/vir-vi-rusted/</guid>
+        <guid>http://localhost:59372/blog/vir-vi-rusted/</guid>
         <description>&lt;h1 id=&#34;vir&#34;&gt;Vir
 &lt;/h1&gt;&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -31,10 +31,10 @@
         </item>
         <item>
         <title>PemphredoCL</title>
-        <link>http://localhost:1313/blog/pemphredocl/</link>
+        <link>http://localhost:59372/blog/pemphredocl/</link>
         <pubDate>Mon, 11 Feb 2019 21:28:35 +0900</pubDate>
         <author>kojihigasa@gmail.com (Koji Higasa)</author>
-        <guid>http://localhost:1313/blog/pemphredocl/</guid>
+        <guid>http://localhost:59372/blog/pemphredocl/</guid>
         <description>&lt;h1 id=&#34;pemphredocl-010-documentation---prereleased&#34;&gt;PemphredoCL 0.1.0 documentation &amp;ndash;prereleased
 &lt;/h1&gt;&lt;p&gt;Welcome! This is the documentation for PemphredoCL.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Workflow:&lt;/strong&gt;&lt;/p&gt;

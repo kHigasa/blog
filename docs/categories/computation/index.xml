@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Computation on Koji Higasa&#39;s Blog</title>
-        <link>http://localhost:1313/blog/categories/computation/</link>
+        <link>http://localhost:59372/blog/categories/computation/</link>
         <description>Recent content in Computation on Koji Higasa&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <managingEditor>kojihigasa@gmail.com (Koji Higasa)</managingEditor>
         <webMaster>kojihigasa@gmail.com (Koji Higasa)</webMaster>
-        <lastBuildDate>Tue, 07 May 2019 21:47:20 +0900</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/computation/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 07 May 2019 21:47:20 +0900</lastBuildDate><atom:link href="http://localhost:59372/blog/categories/computation/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>量子力学によるJuliaプログラミング入門</title>
-        <link>http://localhost:1313/blog/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AB%E3%82%88%E3%82%8Bjulia%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80/</link>
+        <link>http://localhost:59372/blog/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AB%E3%82%88%E3%82%8Bjulia%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80/</link>
         <pubDate>Tue, 07 May 2019 21:47:20 +0900</pubDate>
         <author>kojihigasa@gmail.com (Koji Higasa)</author>
-        <guid>http://localhost:1313/blog/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AB%E3%82%88%E3%82%8Bjulia%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80/</guid>
+        <guid>http://localhost:59372/blog/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AB%E3%82%88%E3%82%8Bjulia%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80/</guid>
         <description>&lt;p&gt;量子力学によるJuliaプログラミング入門の執筆を開始しました。&lt;/p&gt;
 &lt;!--toc--&gt;</description>
         </item>

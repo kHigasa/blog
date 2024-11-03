@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Reference on Koji Higasa&#39;s Blog</title>
-        <link>http://localhost:1313/blog/tags/reference/</link>
+        <link>http://localhost:59372/blog/tags/reference/</link>
         <description>Recent content in Reference on Koji Higasa&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <managingEditor>kojihigasa@gmail.com (Koji Higasa)</managingEditor>
         <webMaster>kojihigasa@gmail.com (Koji Higasa)</webMaster>
-        <lastBuildDate>Mon, 11 Feb 2019 21:31:51 +0900</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/reference/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 11 Feb 2019 21:31:51 +0900</lastBuildDate><atom:link href="http://localhost:59372/blog/tags/reference/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>PemphredoCL - Language reference</title>
-        <link>http://localhost:1313/blog/pemphredocl-language-reference/</link>
+        <link>http://localhost:59372/blog/pemphredocl-language-reference/</link>
         <pubDate>Mon, 11 Feb 2019 21:31:51 +0900</pubDate>
         <author>kojihigasa@gmail.com (Koji Higasa)</author>
-        <guid>http://localhost:1313/blog/pemphredocl-language-reference/</guid>
+        <guid>http://localhost:59372/blog/pemphredocl-language-reference/</guid>
         <description></description>
         </item>
         
