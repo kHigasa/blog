@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>commands on Koji Higasa’s Blog&#39;</title>
+    <title>commands on Koji Higasa’s Blog</title>
     <link>https://khigasa.github.io/blog/categories/commands/</link>
-    <description>Recent content in commands on Koji Higasa’s Blog&#39;</description>
+    <description>Recent content in commands on Koji Higasa’s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Feb 2019 10:04:59 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/blog/categories/commands/index.xml" rel="self" type="application/rss+xml" />

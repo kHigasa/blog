@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>build on your own on Koji Higasa’s Blog&#39;</title>
+    <title>build on your own on Koji Higasa’s Blog</title>
     <link>https://khigasa.github.io/blog/categories/build-on-your-own/</link>
-    <description>Recent content in build on your own on Koji Higasa’s Blog&#39;</description>
+    <description>Recent content in build on your own on Koji Higasa’s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Feb 2019 10:04:59 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/blog/categories/build-on-your-own/index.xml" rel="self" type="application/rss+xml" />
