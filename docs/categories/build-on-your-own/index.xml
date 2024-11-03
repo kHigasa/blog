@@ -6,19 +6,21 @@
     <description>Recent content in Build on Your Own on Koji Higasa&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <managingEditor>kojihigasa@gmail.com</managingEditor>
+    <webMaster>kojihigasa@gmail.com</webMaster>
     <lastBuildDate>Thu, 14 Feb 2019 10:04:59 +0900</lastBuildDate>
     <atom:link href="https://khigasa.github.io/blog/categories/build-on-your-own/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mkdir</title>
       <link>https://khigasa.github.io/blog/mkdir/</link>
-      <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
+      <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/mkdir/</guid>
       <description>&lt;p&gt;This time, I wrote unix &lt;code&gt;mkdir&lt;/code&gt;&amp;ndash;&lt;em&gt;make directories&lt;/em&gt; command with rust.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rustcli</title>
       <link>https://khigasa.github.io/blog/rustcli/</link>
-      <pubDate>Wed, 13 Feb 2019 13:43:54 +0900</pubDate>
+      <pubDate>Wed, 13 Feb 2019 13:43:54 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/rustcli/</guid>
       <description>&lt;p&gt;I write basic UNIX/LINUX commands in Rust.&lt;/p&gt;</description>
     </item>

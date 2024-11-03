@@ -144,12 +144,12 @@ pagination.pagerSize = 10
   url = "/index.xml"
 
 [params]
-  author = "Koji Higasa"
   description = "Koji Higasa's Blog"
   bio = "Curiosity killed the cat"
   job = "Working on an IT industry"
   location = "Tokyo, Japan"
   picture = "images/avatar.jpg"
+  dateFormat = "Mon, Jan 2, 2024"
   twitter = "kojihigasa"
   sidebarBehavior = 1
   thumbnailImage = true
@@ -161,6 +161,9 @@ pagination.pagerSize = 10
   syntaxHighlighter = 'highlight.js'
   clearReading = true
   wapPaginator = true
+
+  [params.author]
+    email = "kojihigasa@gmail.com"
 
   [[params.sharingOptions]]
     name = "Facebook"

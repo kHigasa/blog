@@ -6,47 +6,49 @@
     <description>Recent content in Categories on Koji Higasa&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <managingEditor>kojihigasa@gmail.com</managingEditor>
+    <webMaster>kojihigasa@gmail.com</webMaster>
     <lastBuildDate>Mon, 06 Apr 2020 23:26:43 +0900</lastBuildDate>
     <atom:link href="https://khigasa.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Algebra</title>
       <link>https://khigasa.github.io/blog/categories/linear-algebra/</link>
-      <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate>
+      <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/categories/linear-algebra/</guid>
       <description></description>
     </item>
     <item>
       <title>Proof</title>
       <link>https://khigasa.github.io/blog/categories/proof/</link>
-      <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate>
+      <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/categories/proof/</guid>
       <description></description>
     </item>
     <item>
       <title>Build on Your Own</title>
       <link>https://khigasa.github.io/blog/categories/build-on-your-own/</link>
-      <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
+      <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/categories/build-on-your-own/</guid>
       <description></description>
     </item>
     <item>
       <title>Commands</title>
       <link>https://khigasa.github.io/blog/categories/commands/</link>
-      <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
+      <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/categories/commands/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer Science</title>
       <link>https://khigasa.github.io/blog/categories/computer-science/</link>
-      <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
+      <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/categories/computer-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Operating System</title>
       <link>https://khigasa.github.io/blog/categories/operating-system/</link>
-      <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
+      <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/categories/operating-system/</guid>
       <description></description>
     </item>

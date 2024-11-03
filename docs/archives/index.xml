@@ -6,6 +6,8 @@
     <description>Recent content in Archives on Koji Higasa&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <managingEditor>kojihigasa@gmail.com</managingEditor>
+    <webMaster>kojihigasa@gmail.com</webMaster>
     <atom:link href="https://khigasa.github.io/blog/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

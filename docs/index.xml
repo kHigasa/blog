@@ -6,54 +6,56 @@
     <description>Recent content on Koji Higasa&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <managingEditor>kojihigasa@gmail.com</managingEditor>
+    <webMaster>kojihigasa@gmail.com</webMaster>
     <lastBuildDate>Mon, 06 Apr 2020 23:26:43 +0900</lastBuildDate>
     <atom:link href="https://khigasa.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>正則なn次正方行列Aの余因子行列の行列式が|A|のn-1乗であることの証明</title>
       <link>https://khigasa.github.io/blog/%E6%AD%A3%E5%89%87%E3%81%AAn%E6%AC%A1%E6%AD%A3%E6%96%B9%E8%A1%8C%E5%88%97a%E3%81%AE%E4%BD%99%E5%9B%A0%E5%AD%90%E8%A1%8C%E5%88%97%E3%81%AE%E8%A1%8C%E5%88%97%E5%BC%8F%E3%81%8Ca%E3%81%AEn-1%E4%B9%97%E3%81%A7%E3%81%82%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AE%E8%A8%BC%E6%98%8E/</link>
-      <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate>
+      <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/%E6%AD%A3%E5%89%87%E3%81%AAn%E6%AC%A1%E6%AD%A3%E6%96%B9%E8%A1%8C%E5%88%97a%E3%81%AE%E4%BD%99%E5%9B%A0%E5%AD%90%E8%A1%8C%E5%88%97%E3%81%AE%E8%A1%8C%E5%88%97%E5%BC%8F%E3%81%8Ca%E3%81%AEn-1%E4%B9%97%E3%81%A7%E3%81%82%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AE%E8%A8%BC%E6%98%8E/</guid>
       <description>&lt;p&gt;行列式のn乗を求めて解答する問題があったが, その際設問の誘導に従って使用した式変形が有用であったのでここにその証明を付しておく.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Search</title>
       <link>https://khigasa.github.io/blog/search/</link>
-      <pubDate>Sat, 13 Apr 2019 21:23:01 +0900</pubDate>
+      <pubDate>Sat, 13 Apr 2019 21:23:01 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/search/</guid>
       <description></description>
     </item>
     <item>
       <title>About Me</title>
       <link>https://khigasa.github.io/blog/about/</link>
-      <pubDate>Sat, 13 Apr 2019 21:22:55 +0900</pubDate>
+      <pubDate>Sat, 13 Apr 2019 21:22:55 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/about/</guid>
       <description>&lt;h1 id=&#34;koji-higasa--樋笠-宏次-&#34;&gt;Koji Higasa ( 樋笠 宏次 )&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;profile&#34;&gt;Profile&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;!--toc--&gt;&#xA;&lt;!-- ## Career --&gt;&#xA;&lt;!-- ## Education --&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;affiliation&#34;&gt;Affiliation&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;certification&#34;&gt;Certification&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;activities&#34;&gt;Activities&lt;/h2&gt;&#xA;&lt;h3 id=&#34;--products&#34;&gt;- Products&lt;/h3&gt;&#xA;&lt;h3 id=&#34;--writing&#34;&gt;- Writing&lt;/h3&gt;&#xA;&lt;h3 id=&#34;--competition&#34;&gt;- Competition&lt;/h3&gt;&#xA;&lt;h3 id=&#34;--participation&#34;&gt;- Participation&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;network&#34;&gt;Network&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;workspace&#34;&gt;Workspace&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;public-key&#34;&gt;Public Key&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;GnuPG ( RSA4096bit )&lt;/code&gt; Public Key&amp;rsquo;s fingerprint hashed by &lt;code&gt;sha3-512&lt;/code&gt;. When you want to use my public key (separately I send), please make sure this hash value.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;715e8927aebb34e43796f10cc6fd3e51837ea2c206e3344b08533ab6dd28d714c58d2faafbf026029ab99ec8252afb1d25fcc727a43b7eeda9486a0d3fd0cf89&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;wallet&#34;&gt;Wallet&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Bitcoin(BTC)&#xA;&lt;img src=&#34;https://khigasa.github.io/blog/images/btc.png&#34; alt=&#34;Bitcoin(BTC)&#34; title=&#34;Bitcoin-BTC&#34;&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;PayPal.Me&lt;br&gt;&#xA;&lt;a href=&#34;https://paypal.me/khigasa&#34;&gt;paypal.me/khigasa&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;interests&#34;&gt;Interests&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;favorites&#34;&gt;Favorites&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;finally&#34;&gt;Finally&lt;/h2&gt;&#xA;&lt;p&gt;Thank you very much for your interest. Please enjoy yourself :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
       <link>https://khigasa.github.io/blog/contact/</link>
-      <pubDate>Sat, 13 Apr 2019 21:22:47 +0900</pubDate>
+      <pubDate>Sat, 13 Apr 2019 21:22:47 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/contact/</guid>
       <description>&lt;form action=&#34;https://getform.io/f/b2fc722e-6b58-4684-8a02-c19abba6c8b6&#34; method=&#34;POST&#34;&gt;&#xA;&lt;p&gt;&lt;label for=&#34;name&#34;&gt;Name&lt;/label&gt;&#xA;&lt;input type=&#34;text&#34; name=&#34;name&#34; style=&#34;width:100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; resize: vertical&#34;&gt;&#xA;&lt;label for=&#34;name&#34;&gt;Email&lt;/label&gt;&#xA;&lt;input type=&#34;email&#34; name=&#34;email&#34; style=&#34;width:100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; resize: vertical&#34;&gt;&#xA;&lt;label for=&#34;name&#34;&gt;Subject&lt;/label&gt;&#xA;&lt;input type=&#34;subject&#34; name=&#34;subject&#34; style=&#34;width:100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; resize: vertical&#34;&gt;&#xA;&lt;label for=&#34;name&#34;&gt;Content&lt;/label&gt;&lt;/p&gt;&#xA;  &lt;textarea id=&#34;content&#34; name=&#34;content&#34; placeholder=&#34;Write something..&#34; style=&#34;height:200px; width:100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; resize: vertical&#34;&gt;&lt;/textarea&gt;&#xA;&lt;p&gt;&lt;button type=&#34;submit&#34; style=&#34;background-color: #000; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;&#34;&gt;Send&lt;/button&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>mkdir</title>
       <link>https://khigasa.github.io/blog/mkdir/</link>
-      <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
+      <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/mkdir/</guid>
       <description>&lt;p&gt;This time, I wrote unix &lt;code&gt;mkdir&lt;/code&gt;&amp;ndash;&lt;em&gt;make directories&lt;/em&gt; command with rust.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rustcli</title>
       <link>https://khigasa.github.io/blog/rustcli/</link>
-      <pubDate>Wed, 13 Feb 2019 13:43:54 +0900</pubDate>
+      <pubDate>Wed, 13 Feb 2019 13:43:54 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/rustcli/</guid>
       <description>&lt;p&gt;I write basic UNIX/LINUX commands in Rust.&lt;/p&gt;</description>
     </item>
     <item>
       <title>リカート-アグラワラアルゴリズム、名前が気に入ったのでまとめてみた</title>
       <link>https://khigasa.github.io/blog/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/</link>
-      <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
+      <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate><author>kojihigasa@gmail.com</author>
       <guid>https://khigasa.github.io/blog/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
       <description>&lt;p&gt;この記事は&lt;a href=&#34;https://qiita.com/advent-calendar/2018/pepabo&#34;&gt;GMOペパボ Advent Calendar 2018&lt;/a&gt; 12月16日の記事です。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf&#34;&gt;OPERATING SYSTEM CONCEPTS&lt;/a&gt;を読んで面白かった章の一つ &lt;em&gt;process synchronization&lt;/em&gt; についてちょっと深めてみました。&lt;/p&gt;</description>
     </item>
