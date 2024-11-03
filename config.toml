@@ -23,8 +23,8 @@ paginate = 10
 
 [author]
   name = "Koji Higasa"
-  bio = "Interested in any cultural aspects of things"
-  job = "Master's student at the Univ. of Tokyo"
+  bio = "Curiosity killed the cat"
+  job = "Working on an IT industry"
   location = "Tokyo, Japan"
   picture = "images/avatar.jpg"
   twitter = "kojihigasa"
