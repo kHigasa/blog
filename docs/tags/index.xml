@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on |-|-|-| Haggard Higs&#39; Hacks</title>
-    <link>https://khigasa.github.io/higs/tags/</link>
-    <description>Recent content in Tags on |-|-|-| Haggard Higs&#39; Hacks</description>
+    <title>Tags on Koji Higasa’s Blog&#39;</title>
+    <link>https://khigasa.github.io/blog/tags/</link>
+    <description>Recent content in Tags on Koji Higasa’s Blog&#39;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2020 23:26:43 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/higs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Apr 2020 23:26:43 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Algebra</title>
-      <link>https://khigasa.github.io/higs/tags/linear-algebra/</link>
+      <link>https://khigasa.github.io/blog/tags/linear-algebra/</link>
       <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/tags/linear-algebra/</guid>
+      <guid>https://khigasa.github.io/blog/tags/linear-algebra/</guid>
       <description></description>
     </item>
     
     <item>
       <title>proof</title>
-      <link>https://khigasa.github.io/higs/tags/proof/</link>
+      <link>https://khigasa.github.io/blog/tags/proof/</link>
       <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/tags/proof/</guid>
+      <guid>https://khigasa.github.io/blog/tags/proof/</guid>
       <description></description>
     </item>
     
     <item>
       <title>build on your own</title>
-      <link>https://khigasa.github.io/higs/tags/build-on-your-own/</link>
+      <link>https://khigasa.github.io/blog/tags/build-on-your-own/</link>
       <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/tags/build-on-your-own/</guid>
+      <guid>https://khigasa.github.io/blog/tags/build-on-your-own/</guid>
       <description></description>
     </item>
     
     <item>
       <title>commands</title>
-      <link>https://khigasa.github.io/higs/tags/commands/</link>
+      <link>https://khigasa.github.io/blog/tags/commands/</link>
       <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/tags/commands/</guid>
+      <guid>https://khigasa.github.io/blog/tags/commands/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Advent Calender</title>
-      <link>https://khigasa.github.io/higs/tags/advent-calender/</link>
+      <link>https://khigasa.github.io/blog/tags/advent-calender/</link>
       <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/tags/advent-calender/</guid>
+      <guid>https://khigasa.github.io/blog/tags/advent-calender/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computer science</title>
-      <link>https://khigasa.github.io/higs/tags/computer-science/</link>
+      <link>https://khigasa.github.io/blog/tags/computer-science/</link>
       <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/tags/computer-science/</guid>
+      <guid>https://khigasa.github.io/blog/tags/computer-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>operating system</title>
-      <link>https://khigasa.github.io/higs/tags/operating-system/</link>
+      <link>https://khigasa.github.io/blog/tags/operating-system/</link>
       <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/tags/operating-system/</guid>
+      <guid>https://khigasa.github.io/blog/tags/operating-system/</guid>
       <description></description>
     </item>
     

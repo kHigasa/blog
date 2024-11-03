@@ -22,7 +22,7 @@ Welcome! This is the documentation for PemphredoCL.
 
 **Language Reference:**
 
-[Reference](https://khigasa.github.io/higs/post/pemphredocl/reference/) - describes syntax and language elements
+[Reference](https://khigasa.github.io/blog/post/pemphredocl/reference/) - describes syntax and language elements
 
 [Source code](https://github.com/kHigasa/PemphredoCL) - full code on GitHub repo
 

@@ -15,7 +15,7 @@ thumbnailImage: https://1.bp.blogspot.com/-2kxeNpc_XqA/WcB5uGw5HJI/AAAAAAABG10/S
 
 **What:**
 
-- [Datastructure](https://khigasa.github.io/higs/post/vir/data_structure/) - describe the data structure this editor choose
+- [Datastructure](https://khigasa.github.io/blog/post/vir/data_structure/) - describe the data structure this editor choose
 
 - [Source code](https://github.com/kHigasa/vir) - full code on GitHub repo
 

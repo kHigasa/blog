@@ -25,7 +25,7 @@ PC-電子デバイス間のデバッグ・解析ツールである[`Bus Pirate v
 # Schematic and PCB (回路図とプリント回路版)
 
 先に回路図を示す. 別タブ表示や拡大等しっかり見るには工夫を要するだろうが, 興味ある方は参照してほしい.
-![bus_pirate_v4a_schematic](https://khigasa.github.io/higs/images/BusPirate-v4a.sch.png)
+![bus_pirate_v4a_schematic](https://khigasa.github.io/blog/images/BusPirate-v4a.sch.png)
 *reference1より
 
 マイコンや電圧レギュレータ, アナログスイッチ等のICが基板上に配置されていることが見て取れる.

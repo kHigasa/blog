@@ -1,7 +1,7 @@
-baseURL = "https://khigasa.github.io/higs"
+baseURL = "https://khigasa.github.io/blog"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "|-|-|-| Haggard Higs' Hacks"
+title = "Koji Higasa's Blog"
 canonifyurls = true
 publishdir = "docs"
 theme="hugo-tranquilpeak-theme"
@@ -23,7 +23,7 @@ paginate = 10
 
 [author]
   name = "Koji Higasa"
-  bio = "I study physics."
+  bio = "Interested in any cultural aspects of things"
   job = "Master's student at the Univ. of Tokyo"
   location = "Tokyo, Japan"
   picture = "images/avatar.jpg"
@@ -154,8 +154,8 @@ paginate = 10
   url = "/index.xml"
 
 [params]
-  author = "kHigasa"
-  description = "HHH Haggard Higs' Hacks - とある物理屋(になりたい人)の回想"
+  author = "Koji Higasa"
+  description = "Koji Higasa's Blog"
   sidebarBehavior = 1
   thumbnailImage = true
   thumbnailImagePosition = "right"

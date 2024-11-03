@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on |-|-|-| Haggard Higs&#39; Hacks</title>
-    <link>https://khigasa.github.io/higs/categories/</link>
-    <description>Recent content in Categories on |-|-|-| Haggard Higs&#39; Hacks</description>
+    <title>Categories on Koji Higasa’s Blog&\#39;</title>
+    <link>https://khigasa.github.io/blog/categories/</link>
+    <description>Recent content in Categories on Koji Higasa’s Blog&\#39;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2020 23:26:43 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/higs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Apr 2020 23:26:43 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Algebra</title>
-      <link>https://khigasa.github.io/higs/categories/linear-algebra/</link>
+      <link>https://khigasa.github.io/blog/categories/linear-algebra/</link>
       <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/categories/linear-algebra/</guid>
+      <guid>https://khigasa.github.io/blog/categories/linear-algebra/</guid>
       <description></description>
     </item>
     
     <item>
       <title>proof</title>
-      <link>https://khigasa.github.io/higs/categories/proof/</link>
+      <link>https://khigasa.github.io/blog/categories/proof/</link>
       <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/categories/proof/</guid>
+      <guid>https://khigasa.github.io/blog/categories/proof/</guid>
       <description></description>
     </item>
     
     <item>
       <title>build on your own</title>
-      <link>https://khigasa.github.io/higs/categories/build-on-your-own/</link>
+      <link>https://khigasa.github.io/blog/categories/build-on-your-own/</link>
       <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/categories/build-on-your-own/</guid>
+      <guid>https://khigasa.github.io/blog/categories/build-on-your-own/</guid>
       <description></description>
     </item>
     
     <item>
       <title>commands</title>
-      <link>https://khigasa.github.io/higs/categories/commands/</link>
+      <link>https://khigasa.github.io/blog/categories/commands/</link>
       <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/categories/commands/</guid>
+      <guid>https://khigasa.github.io/blog/categories/commands/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computer science</title>
-      <link>https://khigasa.github.io/higs/categories/computer-science/</link>
+      <link>https://khigasa.github.io/blog/categories/computer-science/</link>
       <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/categories/computer-science/</guid>
+      <guid>https://khigasa.github.io/blog/categories/computer-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>operating system</title>
-      <link>https://khigasa.github.io/higs/categories/operating-system/</link>
+      <link>https://khigasa.github.io/blog/categories/operating-system/</link>
       <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
       
-      <guid>https://khigasa.github.io/higs/categories/operating-system/</guid>
+      <guid>https://khigasa.github.io/blog/categories/operating-system/</guid>
       <description></description>
     </item>
     
