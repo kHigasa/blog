@@ -8,7 +8,7 @@ theme="hugo-tranquilpeak-theme"
 pagination.pagerSize = 10
 
 [[config.services]]
-disqus.shortname = "haggard-higs-hacks"
+  disqus.shortname = "haggard-higs-hacks"
 
 [language]
 [language.en]
