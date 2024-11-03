@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Web on Koji Higasa&#39;s Blog</title>
+        <link>http://localhost:1313/blog/categories/web/</link>
+        <description>Recent content in Web on Koji Higasa&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>kojihigasa@gmail.com (Koji Higasa)</managingEditor>
+        <webMaster>kojihigasa@gmail.com (Koji Higasa)</webMaster>
+        <lastBuildDate>Wed, 18 Sep 2019 23:20:31 +0900</lastBuildDate><atom:link href="http://localhost:1313/blog/categories/web/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Luke</title>
+        <link>http://localhost:1313/blog/luke/</link>
+        <pubDate>Wed, 18 Sep 2019 23:20:31 +0900</pubDate>
+        <author>kojihigasa@gmail.com (Koji Higasa)</author>
+        <guid>http://localhost:1313/blog/luke/</guid>
+        <description>&lt;p&gt;I enjoy hacking at &lt;a class=&#34;link&#34; href=&#34;https://www.hackthebox.eu/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;HackTheBox&lt;/a&gt;:) Today, I try the machine, &lt;em&gt;Luke&lt;/em&gt;.
+I explain it in detail, show the PoC and demonstrate it on my YouTube channel.&lt;/p&gt;
+&lt;!--toc--&gt;
+&lt;h1 id=&#34;poc&#34;&gt;PoC
+&lt;/h1&gt;&lt;h1 id=&#34;active-information-gathering&#34;&gt;Active Information Gathering
+&lt;/h1&gt;&lt;h2 id=&#34;port-scanning&#34;&gt;Port Scanning
+&lt;/h2&gt;&lt;h2 id=&#34;enumeration&#34;&gt;Enumeration
+&lt;/h2&gt;&lt;h3 id=&#34;tools&#34;&gt;Tools
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Nmap&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/OJ/gobuster&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;gobuster&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;password-attacks&#34;&gt;Password Attacks
+&lt;/h1&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

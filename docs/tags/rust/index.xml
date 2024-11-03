@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Rust on Koji Higasa&#39;s Blog</title>
+        <link>http://localhost:1313/blog/tags/rust/</link>
+        <description>Recent content in Rust on Koji Higasa&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>kojihigasa@gmail.com (Koji Higasa)</managingEditor>
+        <webMaster>kojihigasa@gmail.com (Koji Higasa)</webMaster>
+        <lastBuildDate>Sun, 17 Feb 2019 16:55:34 +0900</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/rust/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Data Structure</title>
+        <link>http://localhost:1313/blog/data-structure/</link>
+        <pubDate>Sun, 17 Feb 2019 16:55:34 +0900</pubDate>
+        <author>kojihigasa@gmail.com (Koji Higasa)</author>
+        <guid>http://localhost:1313/blog/data-structure/</guid>
+        <description>&lt;h1 id=&#34;data-structure&#34;&gt;Data structure
+&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Code on my GitHub repo:&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;iframely-embed&#34;&gt;&lt;div class=&#34;iframely-responsive&#34; style=&#34;height: 168px; padding-bottom: 0;&#34;&gt;&lt;a href=&#34;https://github.com/kHigasa/vir/blob/master/src/gap_vec.rs&#34; data-iframely-url=&#34;//cdn.iframe.ly/GEFnaMz&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script async src=&#34;//cdn.iframe.ly/embed.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;h3 id=&#34;references&#34;&gt;References
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Nobuhide Tsuda, &lt;a class=&#34;link&#34; href=&#34;http://vivi.dyndns.org/vivi/docs/gen/gap_vector.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;gap_vector&lt;/em&gt;&lt;/a&gt;, 2009&lt;/li&gt;
+&lt;li&gt;Charles Crowley, &lt;a class=&#34;link&#34; href=&#34;https://www.cs.unm.edu/~crowley/papers/sds.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;em&gt;Data Structures for Text Sequences&lt;/em&gt;&lt;/a&gt;, 1998&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

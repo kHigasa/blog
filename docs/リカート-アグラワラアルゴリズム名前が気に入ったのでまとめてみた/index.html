@@ -361,8 +361,10 @@ OPERATING SYSTEM CONCEPTSを読んで面白かった章の一つ process synchro
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>この記事は<a href="https://qiita.com/advent-calendar/2018/pepabo">GMOペパボ Advent Calendar 2018</a> 12月16日の記事です。</p>
-<p><a href="http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf">OPERATING SYSTEM CONCEPTS</a>を読んで面白かった章の一つ <em>process synchronization</em> についてちょっと深めてみました。</p>
+              <p>この記事は<a class="link" href="https://qiita.com/advent-calendar/2018/pepabo"  target="_blank" rel="noopener"
+    >GMOペパボ Advent Calendar 2018</a> 12月16日の記事です。</p>
+<p><a class="link" href="http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf"  target="_blank" rel="noopener"
+    >OPERATING SYSTEM CONCEPTS</a>を読んで面白かった章の一つ <em>process synchronization</em> についてちょっと深めてみました。</p>
 <h1 id="table-of-contents"></h1><nav id="TableOfContents">
   <ul>
     <li><a href="#まずクリティカルセクションについてちょっと触れておく">まずクリティカルセクションについてちょっと触れておく</a></li>
@@ -376,11 +378,11 @@ OPERATING SYSTEM CONCEPTSを読んで面白かった章の一つ process synchro
     </li>
   </ul>
 </nav>
-<h2 id="まずクリティカルセクションについてちょっと触れておく">まずクリティカルセクションについてちょっと触れておく</h2>
-<p>クリティカルセクション(CS)は、その名の通り&quot;<em>危険な部分</em>&ldquo;で実態はコードの集まりです。プロセスはそれぞれCSを所有し、CSで作成したり更新したり色々なことをします。また、システムはCSに1つのプロセスのみが入るように制御しなければいけません。なぜなら、あるCSを共有する複数のプロセスが、そのCSに同時に入り、何かを作成したり更新したりすると、共有のデータに不整合が生じ、そのデータは破壊され、システムとして破綻をきたすためです。</p>
+<h2 id="まずクリティカルセクションについてちょっと触れておく">まずクリティカルセクションについてちょっと触れておく
+</h2><p>クリティカルセクション(CS)は、その名の通り&quot;<em>危険な部分</em>&ldquo;で実態はコードの集まりです。プロセスはそれぞれCSを所有し、CSで作成したり更新したり色々なことをします。また、システムはCSに1つのプロセスのみが入るように制御しなければいけません。なぜなら、あるCSを共有する複数のプロセスが、そのCSに同時に入り、何かを作成したり更新したりすると、共有のデータに不整合が生じ、そのデータは破壊され、システムとして破綻をきたすためです。</p>
 <p>以下、本題に入ります。</p>
-<h2 id="概要">概要</h2>
-<p>分散システムのプロセス同期において、クリティカルセクションのMutual Exclusion(ME、相互排他)を実現するアルゴリズムの一つであるRicart-Agrawala&rsquo;s(RA) Algorithmについてまとめます。</p>
+<h2 id="概要">概要
+</h2><p>分散システムのプロセス同期において、クリティカルセクションのMutual Exclusion(ME、相互排他)を実現するアルゴリズムの一つであるRicart-Agrawala&rsquo;s(RA) Algorithmについてまとめます。</p>
 <p>分散システムにおいてMEを満たすには以下の３つの基本的な手法があります。</p>
 <ol>
 <li>non-token-based approach</li>
@@ -391,43 +393,106 @@ OPERATING SYSTEM CONCEPTSを読んで面白かった章の一つ process synchro
 <ol>
 <li>ノントークンベース手法：複数プロセスがメッセージ交換を行う。</li>
 <li>トークンベース手法：複数プロセスがトークンの授受を行う。</li>
-<li>コーラムベース手法：CSの占有権を求めるプロセスが、CSを実行するために他のプロセスの部分集合から許可を得る。わかりにくいですが、コーラムについてはこちらのQiitaの記事が大変参考になりました。<a href="https://qiita.com/everpeace/items/632831371da5ff215995">最近よく聞くQuorumは過半数(多数決)よりも一般的でパワフルな概念だった</a>(またブロックチェーン界隈では、こんなのもあるようです。<a href="https://www.jpmorgan.co.jp/country/JP/ja/Quorum">Quorum Advancing Blockchain Technology</a>)</li>
+<li>コーラムベース手法：CSの占有権を求めるプロセスが、CSを実行するために他のプロセスの部分集合から許可を得る。わかりにくいですが、コーラムについてはこちらのQiitaの記事が大変参考になりました。<a class="link" href="https://qiita.com/everpeace/items/632831371da5ff215995"  target="_blank" rel="noopener"
+    >最近よく聞くQuorumは過半数(多数決)よりも一般的でパワフルな概念だった</a>(またブロックチェーン界隈では、こんなのもあるようです。<a class="link" href="https://www.jpmorgan.co.jp/country/JP/ja/Quorum"  target="_blank" rel="noopener"
+    >Quorum Advancing Blockchain Technology</a>)</li>
 </ol>
 <p>それぞれの手法によって、複数プロセスが相互に通信を行いCSの占有権の授受を行っています。</p>
-<h2 id="排他制御アルゴリズム色々">排他制御アルゴリズム色々</h2>
-<p>ノントークンベース手法において、RA AlgorithmはLamport&rsquo;s Algorithmを修正したアルゴリズムです。また、Lodha-Kshemkalyani&rsquo;s AlgorithmはそのRAを修正したものとなっています。他にもトークンベース手法においては、Raymond&rsquo;s Algorithmやそれを修正したKanrar-Chiaki Algorithm、Suzuki-Kasami Algorithmなどがあり、コーラムベース手法ではMaekawa&rsquo;s Algorithmなどがあります。こういったように系譜を少したどるだけでも有名な様々なアルゴリズムが存在することがわかります。</p>
-<p>最近でもこれらのアルゴリズムを組み合わせたり、拡張することによっていくつかのアルゴリズムが論文で発表されています。最新のもので面白いものがあったのでそれについて書こうかと思っていたのですが、一般には有料の論文であったためここでは留めておきます(興味のある方は話しましょう!)。が、代わりに論文にあたっていた際に偶然ヒットしたこちらのスライド（<a href="https://www.nii.ac.jp/sparc/event/2010/pdf/5/1_ojiro_220924.pdf">大学図書館における電子ジャーナル契約の現状と課題 〜ビッグディールの光と影〜</a>）がちょっと古いものですが、へーといった感じだったので紹介しておきます。</p>
-<h2 id="ricart-agrawalas-algorithmについて">Ricart-Agrawala&rsquo;s Algorithmについて</h2>
-<p>これは1981年に発表された古典的なアルゴリズムの一つで、以下内容をまとめます。</p>
+<h2 id="排他制御アルゴリズム色々">排他制御アルゴリズム色々
+</h2><p>ノントークンベース手法において、RA AlgorithmはLamport&rsquo;s Algorithmを修正したアルゴリズムです。また、Lodha-Kshemkalyani&rsquo;s AlgorithmはそのRAを修正したものとなっています。他にもトークンベース手法においては、Raymond&rsquo;s Algorithmやそれを修正したKanrar-Chiaki Algorithm、Suzuki-Kasami Algorithmなどがあり、コーラムベース手法ではMaekawa&rsquo;s Algorithmなどがあります。こういったように系譜を少したどるだけでも有名な様々なアルゴリズムが存在することがわかります。</p>
+<p>最近でもこれらのアルゴリズムを組み合わせたり、拡張することによっていくつかのアルゴリズムが論文で発表されています。最新のもので面白いものがあったのでそれについて書こうかと思っていたのですが、一般には有料の論文であったためここでは留めておきます(興味のある方は話しましょう!)。が、代わりに論文にあたっていた際に偶然ヒットしたこちらのスライド（<a class="link" href="https://www.nii.ac.jp/sparc/event/2010/pdf/5/1_ojiro_220924.pdf"  target="_blank" rel="noopener"
+    >大学図書館における電子ジャーナル契約の現状と課題 〜ビッグディールの光と影〜</a>）がちょっと古いものですが、へーといった感じだったので紹介しておきます。</p>
+<h2 id="ricart-agrawalas-algorithmについて">Ricart-Agrawala&rsquo;s Algorithmについて
+</h2><p>これは1981年に発表された古典的なアルゴリズムの一つで、以下内容をまとめます。</p>
 <ol>
-<li>あるプロセスP<sub>i</sub>がCSの占有権を求めるとします。この時、P<sub>i</sub>は他のすべてのプロセスに対して、&lt; T<sub>i</sub>, i&gt;の形のリクエストをキャストします（マルチキャストを行う）。ここでT<sub>i</sub>はランポートの論理時計による現在のタイムスタンプを表しており、これは端的にいうとただの時刻です。分散システムでは共通の物理時計がないため、これがその代役を担います。時間を事象発生の前後関係に基づく因果律によって論理的に定義しています。こちらの資料<a href="http://www-masu.ist.osaka-u.ac.jp/~kakugawa/distalg.pdf">分散アルゴリズム入門</a>に設計・実装などが載っていました。</li>
+<li>あるプロセスP<sub>i</sub>がCSの占有権を求めるとします。この時、P<sub>i</sub>は他のすべてのプロセスに対して、&lt; T<sub>i</sub>, i&gt;の形のリクエストをキャストします（マルチキャストを行う）。ここでT<sub>i</sub>はランポートの論理時計による現在のタイムスタンプを表しており、これは端的にいうとただの時刻です。分散システムでは共通の物理時計がないため、これがその代役を担います。時間を事象発生の前後関係に基づく因果律によって論理的に定義しています。こちらの資料<a class="link" href="http://www-masu.ist.osaka-u.ac.jp/~kakugawa/distalg.pdf"  target="_blank" rel="noopener"
+    >分散アルゴリズム入門</a>に設計・実装などが載っていました。</li>
 <li>P<sub>i</sub>は他のすべてのプロセスがこのリクエストに対してOKのレスポンスを返してくれるまで待ちます。すべてのOKの返事が集まれば、P<sub>i</sub>はCSを占有できるようになります。</li>
 <li>もし他のプロセスP<sub>j</sub>&lt; T<sub>j</sub>, j&gt;(T<sub>j</sub>&gt;T<sub>i</sub>)がCSを占有していたり、CSの占有権を要求していたとすると、&lt; T<sub>i</sub>, i&gt;のリクエストはキューに入り自分に占有権が廻ってくるのを待ちます。</li>
 </ol>
 <p>以上がそのロジックなのですが、言葉ではわかりにくいので、具体的にして今、{P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, P<sub>4</sub>, P<sub>5</sub>, P<sub>6</sub>}の6つのプロセスがあるとし、P<sub>2</sub>とP<sub>5</sub>がT<sub>2</sub>=13、T<sub>5</sub>=7でリクエストを送り、その時P<sub>3</sub>がCSにアクセスしている状況を考えます。</p>
 <p>まず、P<sub>5</sub>はT<sub>5</sub>=7で、P<sub>2</sub>はT<sub>2</sub>=13で、すべてのプロセスに対してリクエストを送信します。
-<img src="https://khigasa.github.io/blog/images/image001.png" alt="RAImage001"></p>
+<img src="https://khigasa.github.io/blog/images/image001.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="RAImage001"
+	
+	
+></p>
 <p>P<sub>1</sub>、P<sub>4</sub>、P<sub>6</sub>に関してはどれもすぐにOKの返事をします。これらはどれもCSを占有してはいないし、要求してもいないので。
-<img src="https://khigasa.github.io/blog/images/image002.png" alt="RAImage002"></p>
+<img src="https://khigasa.github.io/blog/images/image002.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="RAImage002"
+	
+	
+></p>
 <p>残りのプロセスはCSを占有していたり、要求しているものなので、無思慮に処理は進みませんが、すべてランポートの論理時計によるタイムスタンプに従って処理されていきます。今回、T<sub>5</sub>&lt; T<sub>2</sub>なのでP<sub>3</sub>へのリクエストにおいて、まずP<sub>5</sub>がキューに入ります。
-<img src="https://khigasa.github.io/blog/images/image003.png" alt="RAImage003"></p>
+<img src="https://khigasa.github.io/blog/images/image003.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="RAImage003"
+	
+	
+></p>
 <p>P<sub>2</sub>とP<sub>5</sub>の通信においても、同様の理由でP<sub>5</sub>が優先され、P<sub>5</sub>のキューにP<sub>2</sub>が入ります。
-<img src="https://khigasa.github.io/blog/images/image004.png" alt="RAImage004"></p>
+<img src="https://khigasa.github.io/blog/images/image004.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="RAImage004"
+	
+	
+></p>
 <p>これでP<sub>3</sub>のリリースメッセージを受け取ると、キューによりまずP<sub>5</sub>がCSを占有し、
-<img src="https://khigasa.github.io/blog/images/image005.png" alt="RAImage005"></p>
+<img src="https://khigasa.github.io/blog/images/image005.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="RAImage005"
+	
+	
+></p>
 <p>P<sub>5</sub>のリリースメッセージを受けるとP<sub>2</sub>がCSを占有します。
-<img src="https://khigasa.github.io/blog/images/image006.png" alt="RAImage006"></p>
-<p>これでRAではMEが達成でき、プロセスのCS占有権リクエストはレスポンスやキューに入るなど、どんな形であれ処理されるので、リクエスト元クライアントの同期遅延は <em><strong>O</strong></em>(1)のオーダーとかなり小さくなるのですが、一方、リクエストはマルチキャストを伴っており、さらに言うと、CS開放の際のリリースメッセージも実はマルチキャストを伴っていたりするので、そのデータ通信量（<em>Bandwidth</em>??）は <em><strong>O</strong></em>(n)のオーダーに膨らみ、nが増えればかなりつらいことになります。一長一短ですね。アルゴリズムの比較系の論文はたくさんあるので（比較指標がほぼ決まっているので書きやすいのかもしれません）、単純な頭の体操が好きな人は暇な時に調べてみるとちょっと幸せになるかもしれません。ex/<a href="https://pdfs.semanticscholar.org/3b82/5910741d7b1e8a9eb92cbdf139ed3bbb95c1.pdf">A Comparative Study of Ricart-Agrawala and
+<img src="https://khigasa.github.io/blog/images/image006.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="RAImage006"
+	
+	
+></p>
+<p>これでRAではMEが達成でき、プロセスのCS占有権リクエストはレスポンスやキューに入るなど、どんな形であれ処理されるので、リクエスト元クライアントの同期遅延は <em><strong>O</strong></em>(1)のオーダーとかなり小さくなるのですが、一方、リクエストはマルチキャストを伴っており、さらに言うと、CS開放の際のリリースメッセージも実はマルチキャストを伴っていたりするので、そのデータ通信量（<em>Bandwidth</em>??）は <em><strong>O</strong></em>(n)のオーダーに膨らみ、nが増えればかなりつらいことになります。一長一短ですね。アルゴリズムの比較系の論文はたくさんあるので（比較指標がほぼ決まっているので書きやすいのかもしれません）、単純な頭の体操が好きな人は暇な時に調べてみるとちょっと幸せになるかもしれません。ex/<a class="link" href="https://pdfs.semanticscholar.org/3b82/5910741d7b1e8a9eb92cbdf139ed3bbb95c1.pdf"  target="_blank" rel="noopener"
+    >A Comparative Study of Ricart-Agrawala and
 Maekawa Distributed Mutual Exclusion Algorithm</a></p>
-<p>コードがないのも味気ないのですが、興味がある方は他をあたってくださいmm ロジックとしては単純ですが、実装は大変です。（僕が調べた限りでは、Java, C, C++, Pythonで実装されたものが見つかりました ex/<a href="http://codingtechlife.blogspot.com/2017/11/write-c-program-to-implement-ricart.html">
+<p>コードがないのも味気ないのですが、興味がある方は他をあたってくださいmm ロジックとしては単純ですが、実装は大変です。（僕が調べた限りでは、Java, C, C++, Pythonで実装されたものが見つかりました ex/<a class="link" href="http://codingtechlife.blogspot.com/2017/11/write-c-program-to-implement-ricart.html"  target="_blank" rel="noopener"
+    >
 Write a C program to implement Ricart-Agrawala algorithm for distributed mutual exclusion - Distributed Computing Assignment - BITS -WILP</a>）。</p>
-<h2 id="最後に">最後に</h2>
-<p>僕はプログラミングにおいて形にすることから入りましたが、それは私服で山登りを始めたようなものでした。それでは山登りはできてもせいぜい高尾山とか<a href="https://ja.wikipedia.org/wiki/%E9%A3%AF%E9%87%8E%E5%B1%B1">飯野山</a>くらいで、直ぐ頭打ちになってしまいます。浅い技術の習得が目的化し、プログラミングという行為自体が形骸化していきます。そんな状況を打開すべくCSに関する理論書を漁りはじめ、最初に読んだのがこれだったのですが、まさに効果覿面でした。例えば、言語に対する理解も深まり、的外れの見当が減りデバッグの質が向上するなど、日々のプログラミングにおける様々な局面で良好な変化が起こりました。長い本なので僕のようにある程度の強度で全ページを読むなどと勧めるのはミスリードだと思いますが、僕はOSについて理解したい非理情のエンジニアがいれば、 <em>computing</em> の世界に入る何らかのきっかけには必ずなると思うのでこの<a href="http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf">OPERATING SYSTEM CONCEPTS</a>をおすすめします。</p>
-<h3 id="以下駄文">以下駄文</h3>
-<p>目の前の大木を見てその山の概形をつかむのが難しいように、数行のコードからそれを支える分野を把握するのは普通の人には不可能だ。実際何らかの理論書を読んだところで目に見える変化はないし、やる意義を問われればないときっぱりないと答えると思う。当人は森の一端を垣間みたことで、何か想像以上に大きなものに触れてしまったように感じ、それ以上奥に進むのを躊躇してしまうかもしれない。しかし、呑気な学習者とは愚かなもので、ひと度そんなよくわからないものに触れてしまうと、好奇心の赴くままに突き進もうとしてしまうものだ。学生時代くらいそんな遊びとも言える、一見無駄な活動に時間を使ってもいいだろう。</p>
+<h2 id="最後に">最後に
+</h2><p>僕はプログラミングにおいて形にすることから入りましたが、それは私服で山登りを始めたようなものでした。それでは山登りはできてもせいぜい高尾山とか<a class="link" href="https://ja.wikipedia.org/wiki/%E9%A3%AF%E9%87%8E%E5%B1%B1"  target="_blank" rel="noopener"
+    >飯野山</a>くらいで、直ぐ頭打ちになってしまいます。浅い技術の習得が目的化し、プログラミングという行為自体が形骸化していきます。そんな状況を打開すべくCSに関する理論書を漁りはじめ、最初に読んだのがこれだったのですが、まさに効果覿面でした。例えば、言語に対する理解も深まり、的外れの見当が減りデバッグの質が向上するなど、日々のプログラミングにおける様々な局面で良好な変化が起こりました。長い本なので僕のようにある程度の強度で全ページを読むなどと勧めるのはミスリードだと思いますが、僕はOSについて理解したい非理情のエンジニアがいれば、 <em>computing</em> の世界に入る何らかのきっかけには必ずなると思うのでこの<a class="link" href="http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf"  target="_blank" rel="noopener"
+    >OPERATING SYSTEM CONCEPTS</a>をおすすめします。</p>
+<h3 id="以下駄文">以下駄文
+</h3><p>目の前の大木を見てその山の概形をつかむのが難しいように、数行のコードからそれを支える分野を把握するのは普通の人には不可能だ。実際何らかの理論書を読んだところで目に見える変化はないし、やる意義を問われればないときっぱりないと答えると思う。当人は森の一端を垣間みたことで、何か想像以上に大きなものに触れてしまったように感じ、それ以上奥に進むのを躊躇してしまうかもしれない。しかし、呑気な学習者とは愚かなもので、ひと度そんなよくわからないものに触れてしまうと、好奇心の赴くままに突き進もうとしてしまうものだ。学生時代くらいそんな遊びとも言える、一見無駄な活動に時間を使ってもいいだろう。</p>
 <p>かなり厳しいだろうが、まだなんとかなる。一度は森を感じてみたい。</p>
 <hr>
-<p>明日の担当は<a href="https://qiita.com/tsumichan">@tsumichan</a>さんです、お願いいたします。</p>
+<p>明日の担当は<a class="link" href="https://qiita.com/tsumichan"  target="_blank" rel="noopener"
+    >@tsumichan</a>さんです、お願いいたします。</p>
               
             </div>
           </div>

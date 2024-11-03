@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Archives on Koji Higasa&#39;s Blog</title>
-    <link>https://khigasa.github.io/blog/archives/</link>
-    <description>Recent content in Archives on Koji Higasa&#39;s Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <managingEditor>kojihigasa@gmail.com</managingEditor>
-    <webMaster>kojihigasa@gmail.com</webMaster>
-    <atom:link href="https://khigasa.github.io/blog/archives/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+    <channel>
+        <title>Archives on Koji Higasa&#39;s Blog</title>
+        <link>https://khigasa.github.io/blog/archives/</link>
+        <description>Recent content in Archives on Koji Higasa&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>kojihigasa@gmail.com (Koji Higasa)</managingEditor>
+        <webMaster>kojihigasa@gmail.com (Koji Higasa)</webMaster><atom:link href="https://khigasa.github.io/blog/archives/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
 </rss>

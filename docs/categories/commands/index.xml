@@ -1,28 +1,84 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Commands on Koji Higasa&#39;s Blog</title>
-    <link>https://khigasa.github.io/blog/categories/commands/</link>
-    <description>Recent content in Commands on Koji Higasa&#39;s Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <managingEditor>kojihigasa@gmail.com</managingEditor>
-    <webMaster>kojihigasa@gmail.com</webMaster>
-    <lastBuildDate>Thu, 14 Feb 2019 10:04:59 +0900</lastBuildDate>
-    <atom:link href="https://khigasa.github.io/blog/categories/commands/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>mkdir</title>
-      <link>https://khigasa.github.io/blog/mkdir/</link>
-      <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate><author>kojihigasa@gmail.com</author>
-      <guid>https://khigasa.github.io/blog/mkdir/</guid>
-      <description>&lt;p&gt;This time, I wrote unix &lt;code&gt;mkdir&lt;/code&gt;&amp;ndash;&lt;em&gt;make directories&lt;/em&gt; command with rust.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Rustcli</title>
-      <link>https://khigasa.github.io/blog/rustcli/</link>
-      <pubDate>Wed, 13 Feb 2019 13:43:54 +0900</pubDate><author>kojihigasa@gmail.com</author>
-      <guid>https://khigasa.github.io/blog/rustcli/</guid>
-      <description>&lt;p&gt;I write basic UNIX/LINUX commands in Rust.&lt;/p&gt;</description>
-    </item>
-  </channel>
+    <channel>
+        <title>Commands on Koji Higasa&#39;s Blog</title>
+        <link>https://khigasa.github.io/blog/categories/commands/</link>
+        <description>Recent content in Commands on Koji Higasa&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>kojihigasa@gmail.com (Koji Higasa)</managingEditor>
+        <webMaster>kojihigasa@gmail.com (Koji Higasa)</webMaster>
+        <lastBuildDate>Thu, 14 Feb 2019 10:04:59 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/blog/categories/commands/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>mkdir</title>
+        <link>https://khigasa.github.io/blog/mkdir/</link>
+        <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
+        <author>kojihigasa@gmail.com (Koji Higasa)</author>
+        <guid>https://khigasa.github.io/blog/mkdir/</guid>
+        <description>&lt;p&gt;This time, I wrote unix &lt;code&gt;mkdir&lt;/code&gt;&amp;ndash;&lt;em&gt;make directories&lt;/em&gt; command with rust.&lt;/p&gt;
+&lt;!--toc--&gt;
+&lt;p&gt;&lt;em&gt;Code on my GitHub repo:&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;iframely-embed&#34;&gt;&lt;div class=&#34;iframely-responsive&#34; style=&#34;height: 168px; padding-bottom: 0;&#34;&gt;&lt;a href=&#34;https://github.com/kHigasa/rustcli/blob/master/mkdir/mkdir/src/main.rs&#34; data-iframely-url=&#34;//cdn.iframe.ly/8tLVzR6&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script async src=&#34;//cdn.iframe.ly/embed.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;em&gt;Live coding demo on my YouTube channel:&lt;/em&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/d2k3FXUmH7I&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;tasks&#34;&gt;Tasks
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Make directories -&amp;gt; use &lt;code&gt;std::fs&lt;/code&gt; module &lt;code&gt;create_dir&lt;/code&gt; function&lt;/li&gt;
+&lt;li&gt;Parse command line option -&amp;gt; use &lt;code&gt;getopts&lt;/code&gt; crate&lt;/li&gt;
+&lt;li&gt;Set permission -&amp;gt; use &lt;code&gt;std::os::unix::fs&lt;/code&gt; module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pseudo-code&#34;&gt;Pseudo code
+&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;options.match
+    m =&amp;gt; mkdir; set permission;
+    p =&amp;gt; mkdir recursively;
+    h =&amp;gt; print usage;
+    _ =&amp;gt; if !args.is_empty()
+             mkdir;
+         else
+             print usage;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;tips&#34;&gt;Tips
+&lt;/h3&gt;&lt;p&gt;Use &lt;code&gt;getopts&lt;/code&gt; crate to parse option easily :)&lt;/p&gt;
+&lt;h4 id=&#34;references&#34;&gt;References
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://doc.rust-lang.org/std/fs/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Module std::fs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.rs/getopts/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Crate getopts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.gnu.org/software/coreutils/mkdir&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;mkdir: Make directories&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+        <item>
+        <title>Rustcli</title>
+        <link>https://khigasa.github.io/blog/rustcli/</link>
+        <pubDate>Wed, 13 Feb 2019 13:43:54 +0900</pubDate>
+        <author>kojihigasa@gmail.com (Koji Higasa)</author>
+        <guid>https://khigasa.github.io/blog/rustcli/</guid>
+        <description>&lt;p&gt;I write basic UNIX/LINUX commands in Rust.&lt;/p&gt;
+&lt;!--toc--&gt;
+&lt;p&gt;&lt;strong&gt;Commands:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://khigasa.github.io/blog/mkdir/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;mkdir&lt;/a&gt; - make directories&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://khigasa.github.io/blog/cat/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;cat&lt;/a&gt; - concatenate files and print on the standard output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;hellip; coming soon.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/kHigasa/rustcli&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Source code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bibliography:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://doc.rust-lang.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rust lang documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

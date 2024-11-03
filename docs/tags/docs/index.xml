@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Docs on Koji Higasa&#39;s Blog</title>
+        <link>http://localhost:1313/blog/tags/docs/</link>
+        <description>Recent content in Docs on Koji Higasa&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>kojihigasa@gmail.com (Koji Higasa)</managingEditor>
+        <webMaster>kojihigasa@gmail.com (Koji Higasa)</webMaster>
+        <lastBuildDate>Sun, 17 Feb 2019 16:54:54 +0900</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/docs/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Vir - Vi Rusted</title>
+        <link>http://localhost:1313/blog/vir-vi-rusted/</link>
+        <pubDate>Sun, 17 Feb 2019 16:54:54 +0900</pubDate>
+        <author>kojihigasa@gmail.com (Koji Higasa)</author>
+        <guid>http://localhost:1313/blog/vir-vi-rusted/</guid>
+        <description>&lt;h1 id=&#34;vir&#34;&gt;Vir
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://khigasa.github.io/blog/post/vir/data_structure/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Datastructure&lt;/a&gt; - describe the data structure this editor choose&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/kHigasa/vir&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Source code&lt;/a&gt; - full code on GitHub repo&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bibliography:&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>PemphredoCL</title>
+        <link>http://localhost:1313/blog/pemphredocl/</link>
+        <pubDate>Mon, 11 Feb 2019 21:28:35 +0900</pubDate>
+        <author>kojihigasa@gmail.com (Koji Higasa)</author>
+        <guid>http://localhost:1313/blog/pemphredocl/</guid>
+        <description>&lt;h1 id=&#34;pemphredocl-010-documentation---prereleased&#34;&gt;PemphredoCL 0.1.0 documentation &amp;ndash;prereleased
+&lt;/h1&gt;&lt;p&gt;Welcome! This is the documentation for PemphredoCL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Workflow:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Language Reference:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://khigasa.github.io/blog/post/pemphredocl/reference/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Reference&lt;/a&gt; - describes syntax and language elements&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/kHigasa/PemphredoCL&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Source code&lt;/a&gt; - full code on GitHub repo&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bibliography:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman, &lt;em&gt;Compilers: Principles, Techniques, and Tools (2nd Edition)&lt;/em&gt;, 2006&lt;/li&gt;
+&lt;li&gt;Terence Parr, &lt;em&gt;Language Implementation Patterns&lt;/em&gt;, 2009&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

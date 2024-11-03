@@ -4,7 +4,7 @@ defaultContentLanguage = "en-us"
 title = "Koji Higasa's Blog"
 canonifyurls = true
 publishdir = "docs"
-theme="hugo-theme-stack"
+theme = "hugo-theme-stack"
 pagination.pagerSize = 10
 
 [language]
@@ -163,6 +163,7 @@ pagination.pagerSize = 10
   wapPaginator = true
 
   [params.author]
+    name = "Koji Higasa"
     email = "kojihigasa@gmail.com"
 
   [[params.sharingOptions]]

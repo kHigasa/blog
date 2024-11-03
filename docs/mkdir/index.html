@@ -368,22 +368,23 @@
 <p><em>Code on my GitHub repo:</em></p>
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 168px; padding-bottom: 0;"><a href="https://github.com/kHigasa/rustcli/blob/master/mkdir/mkdir/src/main.rs" data-iframely-url="//cdn.iframe.ly/8tLVzR6"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 <p><em>Live coding demo on my YouTube channel:</em>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/d2k3FXUmH7I?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/d2k3FXUmH7I" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
 </p>
-<h1 id="tasks">Tasks</h1>
-<ul>
+<h1 id="tasks">Tasks
+</h1><ul>
 <li>Make directories -&gt; use <code>std::fs</code> module <code>create_dir</code> function</li>
 <li>Parse command line option -&gt; use <code>getopts</code> crate</li>
 <li>Set permission -&gt; use <code>std::os::unix::fs</code> module</li>
 </ul>
-<h2 id="pseudo-code">Pseudo code</h2>
-<pre tabindex="0"><code>options.match
+<h2 id="pseudo-code">Pseudo code
+</h2><pre tabindex="0"><code>options.match
     m =&gt; mkdir; set permission;
     p =&gt; mkdir recursively;
     h =&gt; print usage;
@@ -391,13 +392,16 @@
              mkdir;
          else
              print usage;
-</code></pre><h3 id="tips">Tips</h3>
-<p>Use <code>getopts</code> crate to parse option easily :)</p>
-<h4 id="references">References</h4>
-<ul>
-<li><a href="https://doc.rust-lang.org/std/fs/index.html">Module std::fs</a></li>
-<li><a href="https://docs.rs/getopts/">Crate getopts</a></li>
-<li><a href="https://www.gnu.org/software/coreutils/mkdir">mkdir: Make directories</a></li>
+</code></pre><h3 id="tips">Tips
+</h3><p>Use <code>getopts</code> crate to parse option easily :)</p>
+<h4 id="references">References
+</h4><ul>
+<li><a class="link" href="https://doc.rust-lang.org/std/fs/index.html"  target="_blank" rel="noopener"
+    >Module std::fs</a></li>
+<li><a class="link" href="https://docs.rs/getopts/"  target="_blank" rel="noopener"
+    >Crate getopts</a></li>
+<li><a class="link" href="https://www.gnu.org/software/coreutils/mkdir"  target="_blank" rel="noopener"
+    >mkdir: Make directories</a></li>
 </ul>
               
             </div>

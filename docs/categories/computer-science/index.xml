@@ -1,21 +1,140 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Computer Science on Koji Higasa&#39;s Blog</title>
-    <link>https://khigasa.github.io/blog/categories/computer-science/</link>
-    <description>Recent content in Computer Science on Koji Higasa&#39;s Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <managingEditor>kojihigasa@gmail.com</managingEditor>
-    <webMaster>kojihigasa@gmail.com</webMaster>
-    <lastBuildDate>Sun, 16 Dec 2018 11:27:08 +0900</lastBuildDate>
-    <atom:link href="https://khigasa.github.io/blog/categories/computer-science/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>リカート-アグラワラアルゴリズム、名前が気に入ったのでまとめてみた</title>
-      <link>https://khigasa.github.io/blog/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/</link>
-      <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate><author>kojihigasa@gmail.com</author>
-      <guid>https://khigasa.github.io/blog/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
-      <description>&lt;p&gt;この記事は&lt;a href=&#34;https://qiita.com/advent-calendar/2018/pepabo&#34;&gt;GMOペパボ Advent Calendar 2018&lt;/a&gt; 12月16日の記事です。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf&#34;&gt;OPERATING SYSTEM CONCEPTS&lt;/a&gt;を読んで面白かった章の一つ &lt;em&gt;process synchronization&lt;/em&gt; についてちょっと深めてみました。&lt;/p&gt;</description>
-    </item>
-  </channel>
+    <channel>
+        <title>Computer Science on Koji Higasa&#39;s Blog</title>
+        <link>https://khigasa.github.io/blog/categories/computer-science/</link>
+        <description>Recent content in Computer Science on Koji Higasa&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <managingEditor>kojihigasa@gmail.com (Koji Higasa)</managingEditor>
+        <webMaster>kojihigasa@gmail.com (Koji Higasa)</webMaster>
+        <lastBuildDate>Sun, 16 Dec 2018 11:27:08 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/blog/categories/computer-science/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>リカート-アグラワラアルゴリズム、名前が気に入ったのでまとめてみた</title>
+        <link>https://khigasa.github.io/blog/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+        <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
+        <author>kojihigasa@gmail.com (Koji Higasa)</author>
+        <guid>https://khigasa.github.io/blog/%E3%83%AA%E3%82%AB%E3%83%BC%E3%83%88-%E3%82%A2%E3%82%B0%E3%83%A9%E3%83%AF%E3%83%A9%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%90%8D%E5%89%8D%E3%81%8C%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+        <description>&lt;p&gt;この記事は&lt;a class=&#34;link&#34; href=&#34;https://qiita.com/advent-calendar/2018/pepabo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GMOペパボ Advent Calendar 2018&lt;/a&gt; 12月16日の記事です。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OPERATING SYSTEM CONCEPTS&lt;/a&gt;を読んで面白かった章の一つ &lt;em&gt;process synchronization&lt;/em&gt; についてちょっと深めてみました。&lt;/p&gt;
+&lt;!--toc--&gt;
+&lt;h2 id=&#34;まずクリティカルセクションについてちょっと触れておく&#34;&gt;まずクリティカルセクションについてちょっと触れておく
+&lt;/h2&gt;&lt;p&gt;クリティカルセクション(CS)は、その名の通り&amp;quot;&lt;em&gt;危険な部分&lt;/em&gt;&amp;ldquo;で実態はコードの集まりです。プロセスはそれぞれCSを所有し、CSで作成したり更新したり色々なことをします。また、システムはCSに1つのプロセスのみが入るように制御しなければいけません。なぜなら、あるCSを共有する複数のプロセスが、そのCSに同時に入り、何かを作成したり更新したりすると、共有のデータに不整合が生じ、そのデータは破壊され、システムとして破綻をきたすためです。&lt;/p&gt;
+&lt;p&gt;以下、本題に入ります。&lt;/p&gt;
+&lt;h2 id=&#34;概要&#34;&gt;概要
+&lt;/h2&gt;&lt;p&gt;分散システムのプロセス同期において、クリティカルセクションのMutual Exclusion(ME、相互排他)を実現するアルゴリズムの一つであるRicart-Agrawala&amp;rsquo;s(RA) Algorithmについてまとめます。&lt;/p&gt;
+&lt;p&gt;分散システムにおいてMEを満たすには以下の３つの基本的な手法があります。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;non-token-based approach&lt;/li&gt;
+&lt;li&gt;token-based approach&lt;/li&gt;
+&lt;li&gt;quorum-based approach&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;RA Algorithmは1に属するものですが、とりあえずそれぞれ軽く触れておきます。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ノントークンベース手法：複数プロセスがメッセージ交換を行う。&lt;/li&gt;
+&lt;li&gt;トークンベース手法：複数プロセスがトークンの授受を行う。&lt;/li&gt;
+&lt;li&gt;コーラムベース手法：CSの占有権を求めるプロセスが、CSを実行するために他のプロセスの部分集合から許可を得る。わかりにくいですが、コーラムについてはこちらのQiitaの記事が大変参考になりました。&lt;a class=&#34;link&#34; href=&#34;https://qiita.com/everpeace/items/632831371da5ff215995&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;最近よく聞くQuorumは過半数(多数決)よりも一般的でパワフルな概念だった&lt;/a&gt;(またブロックチェーン界隈では、こんなのもあるようです。&lt;a class=&#34;link&#34; href=&#34;https://www.jpmorgan.co.jp/country/JP/ja/Quorum&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Quorum Advancing Blockchain Technology&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;それぞれの手法によって、複数プロセスが相互に通信を行いCSの占有権の授受を行っています。&lt;/p&gt;
+&lt;h2 id=&#34;排他制御アルゴリズム色々&#34;&gt;排他制御アルゴリズム色々
+&lt;/h2&gt;&lt;p&gt;ノントークンベース手法において、RA AlgorithmはLamport&amp;rsquo;s Algorithmを修正したアルゴリズムです。また、Lodha-Kshemkalyani&amp;rsquo;s AlgorithmはそのRAを修正したものとなっています。他にもトークンベース手法においては、Raymond&amp;rsquo;s Algorithmやそれを修正したKanrar-Chiaki Algorithm、Suzuki-Kasami Algorithmなどがあり、コーラムベース手法ではMaekawa&amp;rsquo;s Algorithmなどがあります。こういったように系譜を少したどるだけでも有名な様々なアルゴリズムが存在することがわかります。&lt;/p&gt;
+&lt;p&gt;最近でもこれらのアルゴリズムを組み合わせたり、拡張することによっていくつかのアルゴリズムが論文で発表されています。最新のもので面白いものがあったのでそれについて書こうかと思っていたのですが、一般には有料の論文であったためここでは留めておきます(興味のある方は話しましょう!)。が、代わりに論文にあたっていた際に偶然ヒットしたこちらのスライド（&lt;a class=&#34;link&#34; href=&#34;https://www.nii.ac.jp/sparc/event/2010/pdf/5/1_ojiro_220924.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;大学図書館における電子ジャーナル契約の現状と課題 〜ビッグディールの光と影〜&lt;/a&gt;）がちょっと古いものですが、へーといった感じだったので紹介しておきます。&lt;/p&gt;
+&lt;h2 id=&#34;ricart-agrawalas-algorithmについて&#34;&gt;Ricart-Agrawala&amp;rsquo;s Algorithmについて
+&lt;/h2&gt;&lt;p&gt;これは1981年に発表された古典的なアルゴリズムの一つで、以下内容をまとめます。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;あるプロセスP&lt;sub&gt;i&lt;/sub&gt;がCSの占有権を求めるとします。この時、P&lt;sub&gt;i&lt;/sub&gt;は他のすべてのプロセスに対して、&amp;lt; T&lt;sub&gt;i&lt;/sub&gt;, i&amp;gt;の形のリクエストをキャストします（マルチキャストを行う）。ここでT&lt;sub&gt;i&lt;/sub&gt;はランポートの論理時計による現在のタイムスタンプを表しており、これは端的にいうとただの時刻です。分散システムでは共通の物理時計がないため、これがその代役を担います。時間を事象発生の前後関係に基づく因果律によって論理的に定義しています。こちらの資料&lt;a class=&#34;link&#34; href=&#34;http://www-masu.ist.osaka-u.ac.jp/~kakugawa/distalg.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;分散アルゴリズム入門&lt;/a&gt;に設計・実装などが載っていました。&lt;/li&gt;
+&lt;li&gt;P&lt;sub&gt;i&lt;/sub&gt;は他のすべてのプロセスがこのリクエストに対してOKのレスポンスを返してくれるまで待ちます。すべてのOKの返事が集まれば、P&lt;sub&gt;i&lt;/sub&gt;はCSを占有できるようになります。&lt;/li&gt;
+&lt;li&gt;もし他のプロセスP&lt;sub&gt;j&lt;/sub&gt;&amp;lt; T&lt;sub&gt;j&lt;/sub&gt;, j&amp;gt;(T&lt;sub&gt;j&lt;/sub&gt;&amp;gt;T&lt;sub&gt;i&lt;/sub&gt;)がCSを占有していたり、CSの占有権を要求していたとすると、&amp;lt; T&lt;sub&gt;i&lt;/sub&gt;, i&amp;gt;のリクエストはキューに入り自分に占有権が廻ってくるのを待ちます。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以上がそのロジックなのですが、言葉ではわかりにくいので、具体的にして今、{P&lt;sub&gt;1&lt;/sub&gt;, P&lt;sub&gt;2&lt;/sub&gt;, P&lt;sub&gt;3&lt;/sub&gt;, P&lt;sub&gt;4&lt;/sub&gt;, P&lt;sub&gt;5&lt;/sub&gt;, P&lt;sub&gt;6&lt;/sub&gt;}の6つのプロセスがあるとし、P&lt;sub&gt;2&lt;/sub&gt;とP&lt;sub&gt;5&lt;/sub&gt;がT&lt;sub&gt;2&lt;/sub&gt;=13、T&lt;sub&gt;5&lt;/sub&gt;=7でリクエストを送り、その時P&lt;sub&gt;3&lt;/sub&gt;がCSにアクセスしている状況を考えます。&lt;/p&gt;
+&lt;p&gt;まず、P&lt;sub&gt;5&lt;/sub&gt;はT&lt;sub&gt;5&lt;/sub&gt;=7で、P&lt;sub&gt;2&lt;/sub&gt;はT&lt;sub&gt;2&lt;/sub&gt;=13で、すべてのプロセスに対してリクエストを送信します。
+&lt;img src=&#34;https://khigasa.github.io/blog/images/image001.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;RAImage001&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;P&lt;sub&gt;1&lt;/sub&gt;、P&lt;sub&gt;4&lt;/sub&gt;、P&lt;sub&gt;6&lt;/sub&gt;に関してはどれもすぐにOKの返事をします。これらはどれもCSを占有してはいないし、要求してもいないので。
+&lt;img src=&#34;https://khigasa.github.io/blog/images/image002.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;RAImage002&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;残りのプロセスはCSを占有していたり、要求しているものなので、無思慮に処理は進みませんが、すべてランポートの論理時計によるタイムスタンプに従って処理されていきます。今回、T&lt;sub&gt;5&lt;/sub&gt;&amp;lt; T&lt;sub&gt;2&lt;/sub&gt;なのでP&lt;sub&gt;3&lt;/sub&gt;へのリクエストにおいて、まずP&lt;sub&gt;5&lt;/sub&gt;がキューに入ります。
+&lt;img src=&#34;https://khigasa.github.io/blog/images/image003.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;RAImage003&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;P&lt;sub&gt;2&lt;/sub&gt;とP&lt;sub&gt;5&lt;/sub&gt;の通信においても、同様の理由でP&lt;sub&gt;5&lt;/sub&gt;が優先され、P&lt;sub&gt;5&lt;/sub&gt;のキューにP&lt;sub&gt;2&lt;/sub&gt;が入ります。
+&lt;img src=&#34;https://khigasa.github.io/blog/images/image004.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;RAImage004&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;これでP&lt;sub&gt;3&lt;/sub&gt;のリリースメッセージを受け取ると、キューによりまずP&lt;sub&gt;5&lt;/sub&gt;がCSを占有し、
+&lt;img src=&#34;https://khigasa.github.io/blog/images/image005.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;RAImage005&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;P&lt;sub&gt;5&lt;/sub&gt;のリリースメッセージを受けるとP&lt;sub&gt;2&lt;/sub&gt;がCSを占有します。
+&lt;img src=&#34;https://khigasa.github.io/blog/images/image006.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;RAImage006&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;これでRAではMEが達成でき、プロセスのCS占有権リクエストはレスポンスやキューに入るなど、どんな形であれ処理されるので、リクエスト元クライアントの同期遅延は &lt;em&gt;&lt;strong&gt;O&lt;/strong&gt;&lt;/em&gt;(1)のオーダーとかなり小さくなるのですが、一方、リクエストはマルチキャストを伴っており、さらに言うと、CS開放の際のリリースメッセージも実はマルチキャストを伴っていたりするので、そのデータ通信量（&lt;em&gt;Bandwidth&lt;/em&gt;??）は &lt;em&gt;&lt;strong&gt;O&lt;/strong&gt;&lt;/em&gt;(n)のオーダーに膨らみ、nが増えればかなりつらいことになります。一長一短ですね。アルゴリズムの比較系の論文はたくさんあるので（比較指標がほぼ決まっているので書きやすいのかもしれません）、単純な頭の体操が好きな人は暇な時に調べてみるとちょっと幸せになるかもしれません。ex/&lt;a class=&#34;link&#34; href=&#34;https://pdfs.semanticscholar.org/3b82/5910741d7b1e8a9eb92cbdf139ed3bbb95c1.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;A Comparative Study of Ricart-Agrawala and
+Maekawa Distributed Mutual Exclusion Algorithm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;コードがないのも味気ないのですが、興味がある方は他をあたってくださいmm ロジックとしては単純ですが、実装は大変です。（僕が調べた限りでは、Java, C, C++, Pythonで実装されたものが見つかりました ex/&lt;a class=&#34;link&#34; href=&#34;http://codingtechlife.blogspot.com/2017/11/write-c-program-to-implement-ricart.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;
+Write a C program to implement Ricart-Agrawala algorithm for distributed mutual exclusion - Distributed Computing Assignment - BITS -WILP&lt;/a&gt;）。&lt;/p&gt;
+&lt;h2 id=&#34;最後に&#34;&gt;最後に
+&lt;/h2&gt;&lt;p&gt;僕はプログラミングにおいて形にすることから入りましたが、それは私服で山登りを始めたようなものでした。それでは山登りはできてもせいぜい高尾山とか&lt;a class=&#34;link&#34; href=&#34;https://ja.wikipedia.org/wiki/%E9%A3%AF%E9%87%8E%E5%B1%B1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;飯野山&lt;/a&gt;くらいで、直ぐ頭打ちになってしまいます。浅い技術の習得が目的化し、プログラミングという行為自体が形骸化していきます。そんな状況を打開すべくCSに関する理論書を漁りはじめ、最初に読んだのがこれだったのですが、まさに効果覿面でした。例えば、言語に対する理解も深まり、的外れの見当が減りデバッグの質が向上するなど、日々のプログラミングにおける様々な局面で良好な変化が起こりました。長い本なので僕のようにある程度の強度で全ページを読むなどと勧めるのはミスリードだと思いますが、僕はOSについて理解したい非理情のエンジニアがいれば、 &lt;em&gt;computing&lt;/em&gt; の世界に入る何らかのきっかけには必ずなると思うのでこの&lt;a class=&#34;link&#34; href=&#34;http://iips.icci.edu.iq/images/exam/Abraham-Silberschatz-Operating-System-Concepts---9th2012.12.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OPERATING SYSTEM CONCEPTS&lt;/a&gt;をおすすめします。&lt;/p&gt;
+&lt;h3 id=&#34;以下駄文&#34;&gt;以下駄文
+&lt;/h3&gt;&lt;p&gt;目の前の大木を見てその山の概形をつかむのが難しいように、数行のコードからそれを支える分野を把握するのは普通の人には不可能だ。実際何らかの理論書を読んだところで目に見える変化はないし、やる意義を問われればないときっぱりないと答えると思う。当人は森の一端を垣間みたことで、何か想像以上に大きなものに触れてしまったように感じ、それ以上奥に進むのを躊躇してしまうかもしれない。しかし、呑気な学習者とは愚かなもので、ひと度そんなよくわからないものに触れてしまうと、好奇心の赴くままに突き進もうとしてしまうものだ。学生時代くらいそんな遊びとも言える、一見無駄な活動に時間を使ってもいいだろう。&lt;/p&gt;
+&lt;p&gt;かなり厳しいだろうが、まだなんとかなる。一度は森を感じてみたい。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;明日の担当は&lt;a class=&#34;link&#34; href=&#34;https://qiita.com/tsumichan&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;@tsumichan&lt;/a&gt;さんです、お願いいたします。&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

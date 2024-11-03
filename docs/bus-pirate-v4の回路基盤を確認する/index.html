@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.136.5 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="">
+<meta name="keywords" content="Bus Pirate v4">
+<meta name="description" content="PC-電子デバイス間のデバッグ・解析ツールであるBus Pirate v4の基盤を解析し, その挙動を回路基盤より見ることが本稿での狙いである.">
+
+
+<meta property="og:description" content="PC-電子デバイス間のデバッグ・解析ツールであるBus Pirate v4の基盤を解析し, その挙動を回路基盤より見ることが本稿での狙いである.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bus Pirate v4の回路基盤を確認する">
+<meta name="twitter:title" content="Bus Pirate v4の回路基盤を確認する">
+<meta property="og:url" content="http://localhost:1313/blog/bus-pirate-v4%E3%81%AE%E5%9B%9E%E8%B7%AF%E5%9F%BA%E7%9B%A4%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/">
+<meta property="twitter:url" content="http://localhost:1313/blog/bus-pirate-v4%E3%81%AE%E5%9B%9E%E8%B7%AF%E5%9F%BA%E7%9B%A4%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/">
+<meta property="og:site_name" content="Koji Higasa&#39;s Blog">
+<meta property="og:description" content="PC-電子デバイス間のデバッグ・解析ツールであるBus Pirate v4の基盤を解析し, その挙動を回路基盤より見ることが本稿での狙いである.">
+<meta name="twitter:description" content="PC-電子デバイス間のデバッグ・解析ツールであるBus Pirate v4の基盤を解析し, その挙動を回路基盤より見ることが本稿での狙いである.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-10-15T22:06:14">
+  
+  
+    <meta property="article:modified_time" content="2019-10-15T22:06:14">
+  
+  
+  
+    
+      <meta property="article:section" content="information security">
+    
+      <meta property="article:section" content="IoT hacking">
+    
+  
+  
+    
+      <meta property="article:tag" content="information security">
+    
+      <meta property="article:tag" content="physics">
+    
+      <meta property="article:tag" content="electronic circuit">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:1313/blog/images/bus_pirate_v4.jpg">
+  <meta property="twitter:image" content="http://localhost:1313/blog/images/bus_pirate_v4.jpg">
+
+
+
+
+
+
+    <title>Bus Pirate v4の回路基盤を確認する</title>
+
+    <link rel="icon" href="http://localhost:1313/blog/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/blog/bus-pirate-v4%E3%81%AE%E5%9B%9E%E8%B7%AF%E5%9F%BA%E7%9B%A4%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/blog/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="http://localhost:1313/blog/">Koji Higasa&#39;s Blog</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://localhost:1313/blog/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://localhost:1313/blog/about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://localhost:1313/blog/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://localhost:1313/blog/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link open-algolia-search" href="http://localhost:1313/blog/search">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+      
+      <span class="sidebar-button-desc">Search</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://localhost:1313/blog/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://localhost:1313/blog/contact">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
+      
+      <span class="sidebar-button-desc">Contact</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kHigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/kojihigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/khigasa/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.pinterest.jp/kojihigasa/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-pinterest"></i>
+      
+      <span class="sidebar-button-desc">Pinterest</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.youtube.com/channel/UCskbXTbY517iXKpUzN2unUA" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-youtube"></i>
+      
+      <span class="sidebar-button-desc">YouTube</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.twitch.tv/khigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitch"></i>
+      
+      <span class="sidebar-button-desc">Twitch</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/khigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/koji-higasa-21a83a171/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/9315234/koji-higasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.reddit.com/user/khigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-reddit"></i>
+      
+      <span class="sidebar-button-desc">Reddit</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://medium.com/@khigasa" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-medium"></i>
+      
+      <span class="sidebar-button-desc">Medium</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.quora.com/profile/khigasa-Higasa-Koji" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-quora"></i>
+      
+      <span class="sidebar-button-desc">Quora</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://localhost:1313/blog/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Bus Pirate v4の回路基盤を確認する
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-10-15T22:06:14&#43;09:00">
+        
+  
+  
+  
+  
+    Tue, Oct 15, 15156
+  
+
+      </time>
+    
+    
+  
+  
+    <span></span>
+    
+      <a class="category-link" href="http://localhost:1313/blog/categories/information-security">information security</a>, 
+    
+      <a class="category-link" href="http://localhost:1313/blog/categories/iot-hacking">IoT hacking</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>PC-電子デバイス間のデバッグ・解析ツールである<a class="link" href="https://www.seeedstudio.com/Bus-Pirate-v4.html"  target="_blank" rel="noopener"
+    ><code>Bus Pirate v4</code></a>の基盤を解析し, その挙動を回路基盤より見ることが本稿での狙いである.</p>
+<p>*ファームウェアへのアプローチではないため, そこを確認したい方は<a class="link" href="https://github.com/BusPirate/Bus_Pirate"  target="_blank" rel="noopener"
+    >GitHubのリポジトリ</a>でも参照してほしい.</p>
+<h1 id="table-of-contents"></h1><nav id="TableOfContents">
+  <ul>
+    <li><a href="#usb-microcontroller--pic24fj256gb106-ic1">USB Microcontroller : PIC24FJ256GB106 (IC1)</a></li>
+    <li><a href="#cmos-quad-bilateral-switch--cd4066b-ic2">CMOS Quad Bilateral Switch : CD4066B (IC2)</a></li>
+    <li><a href="#eeprom--24xx64-8kbyte-data-storage-ic3">EEPROM : 24xx64 8Kbyte data storage (IC3)</a>
+      <ul>
+        <li><a href="#references">references</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<h1 id="schematic-and-pcb-回路図とプリント回路版">Schematic and PCB (回路図とプリント回路版)
+</h1><p>先に回路図を示す. 別タブ表示や拡大等しっかり見るには工夫を要するだろうが, 興味ある方は参照してほしい.
+<img src="https://khigasa.github.io/blog/images/BusPirate-v4a.sch.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="bus_pirate_v4a_schematic"
+	
+	
+>
+*reference1より</p>
+<p>マイコンや電圧レギュレータ, アナログスイッチ等のICが基板上に配置されていることが見て取れる.</p>
+<h2 id="usb-microcontroller--pic24fj256gb106-ic1">USB Microcontroller : PIC24FJ256GB106 (IC1)
+</h2><h2 id="cmos-quad-bilateral-switch--cd4066b-ic2">CMOS Quad Bilateral Switch : CD4066B (IC2)
+</h2><h2 id="eeprom--24xx64-8kbyte-data-storage-ic3">EEPROM : 24xx64 8Kbyte data storage (IC3)
+</h2><p>IC3は不揮発性メモリ(EEPROM)である.</p>
+<h3 id="references">references
+</h3><ol>
+<li><a class="link" href="http://dangerousprototypes.com/docs/Bus_Pirate_v4_design_overview"  target="_blank" rel="noopener"
+    >Bus Pirate v4 design overview</a></li>
+<li><a class="link" href="http://ww1.microchip.com/downloads/en/DeviceDoc/39897c.pdf"  target="_blank" rel="noopener"
+    >PIC24FJ256GB106 Datasheet</a></li>
+<li><a class="link" href="http://www.ti.com/lit/ds/symlink/cd4066b.pdf"  target="_blank" rel="noopener"
+    >CD4066B CMOS Quad Bilateral Switch datasheet (Rev. G)</a></li>
+</ol>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small"></span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="http://localhost:1313/blog/tags/information-security/">information security</a>
+
+  <a class="tag tag--primary tag--small" href="http://localhost:1313/blog/tags/physics/">physics</a>
+
+  <a class="tag tag--primary tag--small" href="http://localhost:1313/blog/tags/electronic-circuit/">electronic circuit</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://localhost:1313/blog/%E6%AD%A3%E5%89%87%E3%81%AAn%E6%AC%A1%E6%AD%A3%E6%96%B9%E8%A1%8C%E5%88%97a%E3%81%AE%E4%BD%99%E5%9B%A0%E5%AD%90%E8%A1%8C%E5%88%97%E3%81%AE%E8%A1%8C%E5%88%97%E5%BC%8F%E3%81%8Ca%E3%81%AEn-1%E4%B9%97%E3%81%A7%E3%81%82%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AE%E8%A8%BC%E6%98%8E/" data-tooltip="正則なn次正方行列Aの余因子行列の行列式が|A|のn-1乗であることの証明">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://localhost:1313/blog/luke/" data-tooltip="Luke">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/blog/bus-pirate-v4%E3%81%AE%E5%9B%9E%E8%B7%AF%E5%9F%BA%E7%9B%A4%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://localhost:1313/blog/bus-pirate-v4%E3%81%AE%E5%9B%9E%E8%B7%AF%E5%9F%BA%E7%9B%A4%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2024 Koji Higasa&#39;s Blog. 
+  </span>
+</footer>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://localhost:1313/blog/%E6%AD%A3%E5%89%87%E3%81%AAn%E6%AC%A1%E6%AD%A3%E6%96%B9%E8%A1%8C%E5%88%97a%E3%81%AE%E4%BD%99%E5%9B%A0%E5%AD%90%E8%A1%8C%E5%88%97%E3%81%AE%E8%A1%8C%E5%88%97%E5%BC%8F%E3%81%8Ca%E3%81%AEn-1%E4%B9%97%E3%81%A7%E3%81%82%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AE%E8%A8%BC%E6%98%8E/" data-tooltip="正則なn次正方行列Aの余因子行列の行列式が|A|のn-1乗であることの証明">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="http://localhost:1313/blog/luke/" data-tooltip="Luke">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/blog/bus-pirate-v4%E3%81%AE%E5%9B%9E%E8%B7%AF%E5%9F%BA%E7%9B%A4%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://localhost:1313/blog/bus-pirate-v4%E3%81%AE%E5%9B%9E%E8%B7%AF%E5%9F%BA%E7%9B%A4%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fblog%2Fbus-pirate-v4%25E3%2581%25AE%25E5%259B%259E%25E8%25B7%25AF%25E5%259F%25BA%25E7%259B%25A4%25E3%2582%2592%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2599%25E3%2582%258B%2F">
+          <i class="fa fa-facebook-official"></i><span>%!(EXTRA string=Facebook)</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Flocalhost%3A1313%2Fblog%2Fbus-pirate-v4%25E3%2581%25AE%25E5%259B%259E%25E8%25B7%25AF%25E5%259F%25BA%25E7%259B%25A4%25E3%2582%2592%25E7%25A2%25BA%25E8%25AA%258D%25E3%2581%2599%25E3%2582%258B%2F">
+          <i class="fa fa-twitter"></i><span>%!(EXTRA string=Twitter)</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+    <h4 id="about-card-name"></h4>
+    
+    
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      
+      <div id="cover" style="background-image:url('http://localhost:1313/blog/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="http://localhost:1313/blog/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
