@@ -5,8 +5,10 @@ title = "Koji Higasa's Blog"
 canonifyurls = true
 publishdir = "docs"
 theme="hugo-tranquilpeak-theme"
-config.services.disqus.shortname = "haggard-higs-hacks"
 pagination.pagerSize = 10
+
+[[config.services]]
+disqus.shortname = "haggard-higs-hacks"
 
 [language]
 [language.en]
