@@ -4,7 +4,7 @@ defaultContentLanguage = "en-us"
 title = "Koji Higasa's Blog"
 canonifyurls = true
 publishdir = "docs"
-theme="hugo-tranquilpeak-theme"
+theme="hugo-theme-stack"
 pagination.pagerSize = 10
 
 [language]
