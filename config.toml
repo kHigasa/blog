@@ -5,8 +5,8 @@ title = "Koji Higasa's Blog"
 canonifyurls = true
 publishdir = "docs"
 theme="hugo-tranquilpeak-theme"
-disqusShortname = "haggard-higs-hacks"
-paginate = 10
+config.services.disqus.shortname = "haggard-higs-hacks"
+pagination.pagerSize = 10
 
 [language]
 [language.en]
@@ -20,7 +20,7 @@ paginate = 10
   category = "categories"
   archive = "archives"
 
-[author]
+[params.author]
   name = "Koji Higasa"
   bio = "Curiosity killed the cat"
   job = "Working on an IT industry"
