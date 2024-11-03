@@ -7,9 +7,6 @@ publishdir = "docs"
 theme="hugo-tranquilpeak-theme"
 pagination.pagerSize = 10
 
-[[config.services]]
-  disqus.shortname = "haggard-higs-hacks"
-
 [language]
 [language.en]
 [language.ja]
@@ -182,3 +179,8 @@ pagination.pagerSize = 10
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[config]
+  [config.services]
+    [config.services.disqus]
+      shortname = "haggard-higs-hacks"
