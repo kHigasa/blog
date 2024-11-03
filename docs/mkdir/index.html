@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.81.0 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.136.5 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Koji Higasa">
 <meta name="keywords" content="Rust">
 <meta name="description" content="This time, I wrote unix mkdir&ndash;make directories command with rust.">
@@ -17,7 +17,7 @@
 <meta name="twitter:title" content="mkdir">
 <meta property="og:url" content="https://khigasa.github.io/blog/mkdir/">
 <meta property="twitter:url" content="https://khigasa.github.io/blog/mkdir/">
-<meta property="og:site_name" content="Koji Higasa’s Blog">
+<meta property="og:site_name" content="Koji Higasa&#39;s Blog">
 <meta property="og:description" content="This time, I wrote unix mkdir&ndash;make directories command with rust.">
 <meta name="twitter:description" content="This time, I wrote unix mkdir&ndash;make directories command with rust.">
 <meta property="og:locale" content="en-us">
@@ -86,24 +86,6 @@
     <link rel="stylesheet" href="https://khigasa.github.io/blog/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
     
     
-
-    
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-128672321-2', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-    
-    
   </head>
 
   <body>
@@ -111,7 +93,7 @@ if (!doNotTrack) {
       <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="https://khigasa.github.io/blog/">Koji Higasa’s Blog</a>
+    <a class="header-title-link" href="https://khigasa.github.io/blog/">Koji Higasa&#39;s Blog</a>
   </div>
   
 </header>
@@ -125,7 +107,7 @@ if (!doNotTrack) {
         </a>
         <h4 class="sidebar-profile-name">Koji Higasa</h4>
         
-          <h5 class="sidebar-profile-bio">I study physics.</h5>
+          <h5 class="sidebar-profile-bio">Curiosity killed the cat</h5>
         
       </div>
     
@@ -399,9 +381,12 @@ if (!doNotTrack) {
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 168px; padding-bottom: 0;"><a href="https://github.com/kHigasa/rustcli/blob/master/mkdir/mkdir/src/main.rs" data-iframely-url="//cdn.iframe.ly/8tLVzR6"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 <p><em>Live coding demo on my YouTube channel:</em>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/d2k3FXUmH7I" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/d2k3FXUmH7I?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 </p>
 <h1 id="tasks">Tasks</h1>
 <ul>
@@ -410,7 +395,7 @@ if (!doNotTrack) {
 <li>Set permission -&gt; use <code>std::os::unix::fs</code> module</li>
 </ul>
 <h2 id="pseudo-code">Pseudo code</h2>
-<pre><code>options.match
+<pre tabindex="0"><code>options.match
     m =&gt; mkdir; set permission;
     p =&gt; mkdir recursively;
     h =&gt; print usage;
@@ -519,7 +504,7 @@ if (!doNotTrack) {
         </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2021 Koji Higasa. 
+    &copy; 2024 Koji Higasa. 
   </span>
 </footer>
 
@@ -627,13 +612,13 @@ if (!doNotTrack) {
     
     <h4 id="about-card-name">Koji Higasa</h4>
     
-      <div id="about-card-bio">I study physics.</div>
+      <div id="about-card-bio">Curiosity killed the cat</div>
     
     
       <div id="about-card-job">
         <i class="fa fa-briefcase"></i>
         <br/>
-        Master&rsquo;s student at the Univ. of Tokyo
+        Working on an IT industry
       </div>
     
     
@@ -712,7 +697,7 @@ $(document).ready(function() {
             return;
           }
           var d = document, s = d.createElement('script');
-          var disqus_shortname = 'haggard-blog-hacks';
+          var disqus_shortname = 'haggard-higs-hacks';
           s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 
           s.setAttribute('data-timestamp', +new Date());

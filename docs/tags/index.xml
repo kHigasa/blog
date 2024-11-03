@@ -1,74 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Koji Higasa’s Blog</title>
+    <title>Tags on Koji Higasa&#39;s Blog</title>
     <link>https://khigasa.github.io/blog/tags/</link>
-    <description>Recent content in Tags on Koji Higasa’s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Tags on Koji Higasa&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2020 23:26:43 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Nov 2024 18:56:15 +0900</lastBuildDate>
+    <atom:link href="https://khigasa.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MongoDB</title>
+      <link>https://khigasa.github.io/blog/tags/mongodb/</link>
+      <pubDate>Sun, 03 Nov 2024 18:56:15 +0900</pubDate>
+      <guid>https://khigasa.github.io/blog/tags/mongodb/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Linear Algebra</title>
       <link>https://khigasa.github.io/blog/tags/linear-algebra/</link>
       <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate>
-      
       <guid>https://khigasa.github.io/blog/tags/linear-algebra/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>proof</title>
+      <title>Proof</title>
       <link>https://khigasa.github.io/blog/tags/proof/</link>
       <pubDate>Mon, 06 Apr 2020 23:26:43 +0900</pubDate>
-      
       <guid>https://khigasa.github.io/blog/tags/proof/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>build on your own</title>
+      <title>Build on Your Own</title>
       <link>https://khigasa.github.io/blog/tags/build-on-your-own/</link>
       <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
-      
       <guid>https://khigasa.github.io/blog/tags/build-on-your-own/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>commands</title>
+      <title>Commands</title>
       <link>https://khigasa.github.io/blog/tags/commands/</link>
       <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
-      
       <guid>https://khigasa.github.io/blog/tags/commands/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Advent Calender</title>
       <link>https://khigasa.github.io/blog/tags/advent-calender/</link>
       <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
-      
       <guid>https://khigasa.github.io/blog/tags/advent-calender/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>computer science</title>
+      <title>Computer Science</title>
       <link>https://khigasa.github.io/blog/tags/computer-science/</link>
       <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
-      
       <guid>https://khigasa.github.io/blog/tags/computer-science/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>operating system</title>
+      <title>Operating System</title>
       <link>https://khigasa.github.io/blog/tags/operating-system/</link>
       <pubDate>Sun, 16 Dec 2018 11:27:08 +0900</pubDate>
-      
       <guid>https://khigasa.github.io/blog/tags/operating-system/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

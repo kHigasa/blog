@@ -5,7 +5,6 @@ title = "Koji Higasa's Blog"
 canonifyurls = true
 publishdir = "docs"
 theme="hugo-tranquilpeak-theme"
-googleAnalytics = "UA-128672321-2"
 disqusShortname = "haggard-higs-hacks"
 paginate = 10
 

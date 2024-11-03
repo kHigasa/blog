@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>build on your own on Koji Higasa’s Blog</title>
+    <title>Build on Your Own on Koji Higasa&#39;s Blog</title>
     <link>https://khigasa.github.io/blog/categories/build-on-your-own/</link>
-    <description>Recent content in build on your own on Koji Higasa’s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Build on Your Own on Koji Higasa&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Feb 2019 10:04:59 +0900</lastBuildDate><atom:link href="https://khigasa.github.io/blog/categories/build-on-your-own/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Feb 2019 10:04:59 +0900</lastBuildDate>
+    <atom:link href="https://khigasa.github.io/blog/categories/build-on-your-own/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mkdir</title>
       <link>https://khigasa.github.io/blog/mkdir/</link>
       <pubDate>Thu, 14 Feb 2019 10:04:59 +0900</pubDate>
-      
       <guid>https://khigasa.github.io/blog/mkdir/</guid>
       <description>&lt;p&gt;This time, I wrote unix &lt;code&gt;mkdir&lt;/code&gt;&amp;ndash;&lt;em&gt;make directories&lt;/em&gt; command with rust.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rustcli</title>
       <link>https://khigasa.github.io/blog/rustcli/</link>
       <pubDate>Wed, 13 Feb 2019 13:43:54 +0900</pubDate>
-      
       <guid>https://khigasa.github.io/blog/rustcli/</guid>
       <description>&lt;p&gt;I write basic UNIX/LINUX commands in Rust.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
